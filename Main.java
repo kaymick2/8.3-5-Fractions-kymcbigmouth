@@ -7,25 +7,30 @@ import java.lang.*;
 class Main {
   public static void main(String[] args) {
     Scanner userInput = new Scanner(System.in);
+    int n1 = 0;
+    int n2 = 0;
+    int d1 = 0;
+    int d2 = 0;
+    String ans
     while (userInput.hasNextInt()) {
 
       System.out.println("Enter value for n1:");
-      int n1 = userInput.nextInt();
+      n1 = userInput.nextInt();
       System.out.println("Enter value for d1");
 
-      double d1 = userInput.nextInt();
+      d1 = userInput.nextInt();
 
       System.out.println("Enter value for n2:");
-      int n2 = userInput.nextInt();
+      n2 = userInput.nextInt();
       System.out.println("Enter value for d2");
 
-      double d2 = userInput.nextInt();
+      d2 = userInput.nextInt();
 
     }
 
-    bigMath bigdog = new bigMath(n1, d1, n2, d2);
+    bigMath bigdog = new bigMath(n1, d1, n2, d2, ans, gcf);
 
-    System.out.println("Which math would you like to do?"); 
+    System.out.println("Which math would you like to do?");
   }
 
 }
