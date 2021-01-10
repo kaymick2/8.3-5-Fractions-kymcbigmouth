@@ -5,16 +5,14 @@ public class bigMath {
   private int n2;
   private int d1;
   private int d2;
-  private String ans;
-  private int gcf;
 
-  public bigMath(int n1, int d1, int n2, int d2, String ans,int gcf) {
+
+  public bigMath(int n1, int d1, int n2, int d2) {
     this.n1 = n1;
     this.n2 = n2;
     this.d1 = d1;
     this.d2 = d2;
-    this.ans = ans;
-    this.gcf=gcf;
+
 
   }
 

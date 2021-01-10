@@ -11,11 +11,9 @@ class Main {
     int n2 = 0;
     int d1 = 0;
     int d2 = 0;
-    String ans
-    while (userInput.hasNextInt()) {
-
-      System.out.println("Enter value for n1:");
-      n1 = userInput.nextInt();
+    boolean bError=true;
+    do {
+    
       System.out.println("Enter value for d1");
 
       d1 = userInput.nextInt();
@@ -25,10 +23,9 @@ class Main {
       System.out.println("Enter value for d2");
 
       d2 = userInput.nextInt();
+    }while (userInput.hasNextInt()
 
-    }
-
-    bigMath bigdog = new bigMath(n1, d1, n2, d2, ans, gcf);
+    bigMath bigdog = new bigMath(n1, d1, n2, d2);
 
     System.out.println("Which math would you like to do?");
   }
